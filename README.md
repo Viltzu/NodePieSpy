@@ -18,6 +18,15 @@
  * API currently running here:
    * http://lahdenvuo.info/social/channel/node.js.json
 
+## Install procedure
+
+Requirements: Node.js version 0.10.11
+
+* Run "npm install" inside NodePieSpy directory to download the required dependencies
+* Edit NodePieSpy/lib/index.js file to fit your needs (channels, log files path, port)
+* Create directory for the server api and add a rewrite rule that redirects requests to server ( e.g. Using apache .htaccess file: RewriteRule ^(.*)$ http://nodepie.server.spy:port/$1 [P] )
+* Run the server with “node index.js” and configure the client
+
 ## License (MIT)
 
 Copyright (c) 2013-2014 Ville Lahdenvuo
